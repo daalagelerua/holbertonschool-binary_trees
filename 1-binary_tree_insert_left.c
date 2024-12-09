@@ -28,7 +28,7 @@ return (NULL);
 	new_node->left = parent->left;
 	parent->left->parent = new_node;
 }
-/** verification si parent n'est pas null et remplacer */
+/** verification si parent n'est pas null et remplacer pour left */
 	parent->left = new_node;
 return (new_node);
 }
