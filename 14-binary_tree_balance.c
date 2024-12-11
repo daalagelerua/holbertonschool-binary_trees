@@ -18,7 +18,7 @@ t_left = tree_height(tree->left);
 t_right = tree_height(tree->right);
 
 /*si left > right return left +1 sinon return right +1*/
-return ((t_left > t_right ? t_left : t_right) + 1);
+return ((t_left > t_right ? t_left : t_right) +1);
 }
 
 /**
