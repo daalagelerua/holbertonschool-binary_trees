@@ -11,7 +11,7 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 if (tree == NULL || func == NULL)
 	return;
 
-binary_tree_postorder(tree->left, func);
-binary_tree_postorder(tree->right, func);
-func(tree->n);
+binary_tree_postorder(tree->left, func); /*parcourir subtree left*/
+binary_tree_postorder(tree->right, func); /*parcourir subtree right*/
+func(tree->n); /*appel de la fonction avec la valeur du noeud comme argument*/
 }
